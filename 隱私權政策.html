@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>隱私權政策 / Privacy Policy</title>
+  <style>
+    .lang { display: none; }
+    .lang.active { display: block; }
+    button { margin: 10px; padding: 5px 10px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <div>
+    <button onclick="setLanguage('zh')">中文</button>
+    <button onclick="setLanguage('en')">English</button>
+  </div>
+
+  <!-- 中文版本 -->
+  <div class="lang lang-zh active">
+    <h1>隱私權政策</h1>
+    <p>感謝您使用本遊戲。本隱私權政策旨在向您說明我們如何處理您的個人資料。</p>
+
+    <h2>1. 資料收集</h2>
+    <p>本遊戲不會主動收集任何使用者個人資訊，除非您在進行內購或使用相關服務時提供。</p>
+
+    <h2>2. 內購資料</h2>
+    <p>當您在遊戲中進行內購時，Google Play 會處理您的交易資料。遊戲不會儲存或存取您的信用卡資訊。</p>
+    <p>我們可能會記錄您的購買資訊（如商品名稱、價格和交易日期）以便為您提供服務，並在您更換設備或重新安裝遊戲時提供「恢復購買」功能。</p>
+
+    <h2>3. 恢復購買</h2>
+    <p>如果您更換設備或重新安裝遊戲，您可以使用相同的 Google 帳號來恢復已購買的項目。所有恢復的購買資料都會通過 Google Play 帳號進行處理，並且不會儲存或分享您的購買記錄。</p>
+
+    <h2>4. 第三方服務</h2>
+    <p>本遊戲不包含任何第三方廣告或分析工具，也不會將您的購買資料與任何第三方共享，除非法律要求或為了遵守規範。</p>
+
+    <h2>5. 聯繫方式</h2>
+    <p>如果您對本隱私政策有任何疑問或建議，請與我們聯繫：kur.tinpo@gmail.com</p>
+
+    <h2>6. 更新</h2>
+    <p>本隱私權政策可能會有所更新，更新後的版本將會發布在此頁面。</p>
+  </div>
+
+  <!-- 英文版本 -->
+  <div class="lang lang-en">
+    <h1>Privacy Policy</h1>
+    <p>Thank you for using our game. This privacy policy is intended to explain how we handle your personal data.</p>
+
+    <h2>1. Data Collection</h2>
+    <p>We do not actively collect any personal information unless you provide it during in-app purchases or related services.</p>
+
+    <h2>2. In-App Purchases</h2>
+    <p>When you make purchases, Google Play handles your transaction data. We do not store or access your credit card information.</p>
+    <p>We may record your purchase information (e.g., item name, price, and date) to provide services such as restoring purchases when reinstalling the game or switching devices.</p>
+
+    <h2>3. Restore Purchases</h2>
+    <p>If you switch devices or reinstall the game, you can restore purchases using the same Google account. All restored data is handled through your Google Play account and is not stored or shared.</p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>This game does not include third-party ads or analytics tools. We will not share your purchase data with third parties unless legally required.</p>
+
+    <h2>5. Contact</h2>
+    <p>If you have any questions or suggestions regarding this policy, please contact us at: kur.tinpo@gmail.com</p>
+
+    <h2>6. Updates</h2>
+    <p>This privacy policy may be updated. The updated version will be posted on this page.</p>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelector('.lang-' + lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
